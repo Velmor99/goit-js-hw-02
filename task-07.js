@@ -1,36 +1,36 @@
-const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
+const logins = [ 'Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123' ];
 
 const isLoginValid = function(login) {
-    let valid;
-  if(login.length < 4 || login.length > 16) {
-      valid = false;
-  } else {
-      valid = true;
-  }
-  return valid;
+	let valid;
+	if (login.length < 4 || login.length > 16) {
+		valid = false;
+	} else {
+		valid = true;
+	}
+	return valid;
 };
-console.log(isLoginValid('Ajax')); 
-console.log(isLoginValid('robotGoogles')); 
-console.log(isLoginValid('Zod')); 
+console.log(isLoginValid('Ajax'));
+console.log(isLoginValid('robotGoogles'));
+console.log(isLoginValid('Zod'));
 console.log(isLoginValid('jqueryisextremelyfast'));
 
 const isLoginUnique = function(allLogins, login) {
-  let unique;
-      if(allLogins.join(" ").includes(login)) {
-          unique = false;
-      } else {
-          unique = true;
-      }
-  return unique;
+	let unique;
+	if (allLogins.join(' ').includes(login)) {
+		unique = false;
+	} else {
+		unique = true;
+	}
+	return unique;
 };
-console.log(isLoginUnique(logins, 'Ajax')); 
-console.log(isLoginUnique(logins, 'robotGoogles')); 
-console.log(isLoginUnique(logins, 'Zod')); 
+console.log(isLoginUnique(logins, 'Ajax'));
+console.log(isLoginUnique(logins, 'robotGoogles'));
+console.log(isLoginUnique(logins, 'Zod'));
 console.log(isLoginUnique(logins, 'jqueryisextremelyfast'));
 
 const addLogin = function(allLogins, login) {
-    let result;
-    isLoginValid();
+	let result;
+	isLoginValid();
 };
 
 /*
