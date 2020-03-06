@@ -15,19 +15,17 @@ const isLoginUnique = function(allLogins, login) {
 };
 
 const addLogin = function(allLogins, login) {
-	let add;
 	let result;
 	if (isLoginValid(login) === false) {
-		result = alert('Ошибка! Логин должен быть от 4 до 16 символов');
+		result = 'Ошибка! Логин должен быть от 4 до 16 символов';
 	} else if (isLoginUnique(allLogins, login) === false) {
-		result = alert('Такой логин уже используется!');
+		result = 'Такой логин уже используется!';
 	} else {
-		add = allLogins.push(login);
-		result = alert('Логин успешно добавлен!');
+		allLogins.push(login);
+		result = 'Логин успешно добавлен!';
 	}
-	return add;
+	return result;
 };
-
 
 console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
 console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
